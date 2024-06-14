@@ -18,8 +18,6 @@
 #define OTA_PASS "1234"
 #define NTP_SERVER "pool.ntp.org"
 #define SHOW_IP
-//#define WIFI_BEEPS
-
 //#define NONE_TECHNICAL_ZERO
 #define AUTO_MODECHANGE_TIME 60
 #define FEED_SPEED 120
@@ -34,6 +32,7 @@
 #define SHOW_MODE_DATE
 #define SHOW_MODE_MOONPHASE
 #define SHOW_MODE_TEST
+//#define SELFTEST
 
 //#define APIKEY "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 #define LOCATION "Berlin, DE"
@@ -120,9 +119,11 @@
 #define RTC_TEMPERATURE_OFFSET -1.15
 
 //#define LDR
+//-----------
 //#define LDR_IS_INVERSE
 
 //#define BUZZER
+//--------------
 #define BUZZTIME_ALARM_1 30
 #define BUZZTIME_ALARM_2 30
 #define BUZZTIME_TIMER 30
@@ -139,14 +140,17 @@
 #define IR_LETTER_X 8
 #define IR_LETTER_Y 10
 
-#define LED_LAYOUT_HORIZONTAL_1
+// #define LED_LAYOUT_HORIZONTAL_1
+#define LED_LAYOUT_HORIZONTAL_2 // Matthias
 //#define LED_LAYOUT_VERTICAL_1
 //#define LED_LAYOUT_VERTICAL_2
 //#define LED_LAYOUT_VERTICAL_3
 
-#define NEOPIXEL_TYPE NEO_GRB + NEO_KHZ800     // see Adafruit_NeoPixel.h for help
-//#define NEOPIXEL_TYPE NEO_GRBW + NEO_KHZ800
 
+//#define NEOPIXEL_TYPE NEO_GRB + NEO_KHZ800     // see Adafruit_NeoPixel.h for help
+#define NEOPIXEL_TYPE NEO_GRBW + NEO_KHZ800
+//#define LED_DRIVER_NEO_800KHZ_RGBW // Matthias
+//#define NEOPIXEL_TYPE NEO_RGBW + NEO_KHZ800 // Matthias
 //******************************************************************************
 // Misc
 //******************************************************************************
@@ -156,6 +160,7 @@
 //#define DEBUG_IR
 //#define DEBUG_MATRIX
 //#define DEBUG_FPS
+
 
 //#define SYSLOGSERVER_SERVER "192.168.0.1"
 //#define SYSLOGSERVER_PORT 514
