@@ -1,5 +1,5 @@
 *****
-mod. by mapalo
+mod. by mapalo 2
 ******************************************************************************
 QLOCKWORK
 An advanced firmware for a DIY "word-clock".
